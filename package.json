@@ -1,7 +1,7 @@
 {
     "name": "voby-styled",
     "version": "1.0.2",
-    "description": "A powerful tooltip and menu component library for react.",
+    "description": "Styled/css library designed for Voby.",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
     "browser": "./dist/index.umd.js",
@@ -22,11 +22,15 @@
         "preview": "vite preview --host"
     },
     "keywords": [
-        "tooltip",
-        "notification",
-        "menu",
+        "styled",
+        "css",
+        "emotion",
+        "styled-components",
+        "tailwind",
+        "class",
+        "className",
         "voby",
-        "voby-component"
+        "voby-styled"
     ],
     "license": "MIT",
     "peerDependencies": {
@@ -38,10 +42,10 @@
         "vite-plugin-dts": "^2.3.0"
     },
     "author": "Chi Chong <wongchichong@gmail.com>",
-    "homepage": "https://github.com/wongchichong/voby-power-tooltip",
+    "homepage": "https://github.com/wongchichong/voby-styled",
     "repository": {
         "type": "git",
-        "url": "git@github.com:wongchichong/voby-power-tooltip.git"
+        "url": "git@github.com:wongchichong/voby-styled.git"
     },
     "dependencies": {
         "nanoid": "^3.3.6"
