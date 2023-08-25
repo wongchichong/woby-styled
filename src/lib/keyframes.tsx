@@ -24,8 +24,8 @@ ${strings.map((str, i) => (i < values.length ? str + $$(values[i]) : str)).join(
 }
 
 /** 
- * convert inline keyframes to class and update <style></style> element
- * should work with css/styled not tw
+ * Convert inline keyframes to class and update <style></style> element
+ * should work together with css/styled not tw
  * @example
  * keyframes`
  * from {

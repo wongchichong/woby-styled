@@ -17,7 +17,7 @@ function style<K extends keyof JSX.IntrinsicElementsMap>(comp?: K) {
 }
 
 /** 
- * Convert inline css style to element style string
+ * Convert inline css style to HTMLElement style string.
  * @example
  * const color = ${'red'}
  * <div style={css`color:${color};`}></div>

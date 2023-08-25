@@ -2,7 +2,7 @@
 
 Styled/css library designed for Voby
 
-- **styled** - For every use context: Choose between _Hoverable_, _Static_ &amp; _Alert_ tooltips.
+- **styled** - Convert inline css style to class and update \<style\>\</style> elements.
 - **css** - Easily change default settings via props
 - **tw** - Align your tooltip to your
 - **keyframes** - Align your tooltip to your
@@ -15,13 +15,13 @@ This library inspired by styled-component, @emotion and supoort Tailwind Css
 ### NPM
 
 ```bash
-pnpm install voby-styled
+pnpm add voby-styled
 ```
 
 ## Usage
 
 ## Classed Styles - styled()
-Convert inline css style to class and update \<style\>\</style> element
+Convert inline css style to class and update \<style\>\</style> elements.
  
 @returns hashed CSS class name
 
@@ -54,7 +54,7 @@ Updating \<style> in head and prepend className into ND component.
 
 ## Stringed Styles - css()
 
-Convert inline css style to element style string
+Convert inline css style to HTMLElement style string.
  
  ```tsx
  const color = ${'red'}
@@ -98,7 +98,44 @@ const ND = tw('div')`text-red`
 ```
 Prepend 'text-red' as className into ND component.
 
+## Keyframes - keyframes()
 
+ Convert inline keyframes to class and update <style></style> element
+ 
+ **Should** work together with css()/styled() not tw()
+ 
+ ```tsx
+ const className = keyframes`
+ from {
+   transform: scale(0) rotate(45deg);
+ 	opacity: 0;
+ }
+ to {
+   transform: scale(1) rotate(45deg);
+ 	opacity: 1;
+ }`
+``` 
+ 
+Output:
+```html
+ <head>
+   <style>
+    keyframes hash-name {
+        from {
+            transform: scale(0) rotate(45deg);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1) rotate(45deg);
+            opacity: 1;
+        }
+    }
+   </style>
+ <head>
+ <body>
+   <div style='animation: hash-name 1s'></div>
+ </body>
+```
 
 ## License
 
