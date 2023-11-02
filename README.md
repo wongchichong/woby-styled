@@ -3,9 +3,9 @@
 Styled/css library designed for Voby
 
 - **styled** - Convert inline css style to class and update \<style\>\</style> elements.
-- **css** - Easily change default settings via props
-- **tw** - Align your tooltip to your
-- **keyframes** - Align your tooltip to your
+- **css** - css style in style attribute.
+- **tw** - tailwindCss style
+- **keyframes** - Convert inline keyframes to class and update \<style\>\</style> elements.
 - Tailwind CSS
 
 This library inspired by styled-component, @emotion and supoort Tailwind Css
@@ -80,9 +80,8 @@ Object bases css (CSSProperties) may or may not be implemented.
 
 ## Tailwind Styles - tw()
 
-Like styled() but this classes created in \<style>\</style>
-
 Inline tailwind css style to element class
+
 ```tsx
 const color = ${'text-[red]'}
 <div class={tw`absolute font-bold ${color}`}></div>
