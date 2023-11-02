@@ -1,5 +1,7 @@
-import { $$, ObservableMaybe, useMemo, ObservableReadonly, type JSX } from "voby"
+import { $$, ObservableMaybe, useMemo, ObservableReadonly, type JSX } from 'woby'
+
 import { isTemp } from "./utils"
+
 
 function style<K extends keyof JSX.IntrinsicElementsMap>(comp?: K) {
     function css<K extends (keyof JSX.IntrinsicElementsMap | TemplateStringsArray)>(strings: K, ...values: ObservableMaybe<any>[]):

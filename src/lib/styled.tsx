@@ -1,4 +1,4 @@
-import { $$, JSX, ObservableMaybe, ObservableReadonly, useEffect } from "voby"
+import { $$, JSX, ObservableMaybe, ObservableReadonly, useEffect } from 'woby'
 import { extract, isTemp } from "./utils"
 import { nanoid } from 'nanoid'
 import { append } from "./append"

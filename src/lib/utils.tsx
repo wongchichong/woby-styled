@@ -1,4 +1,4 @@
-import { ObservableMaybe, type JSX } from 'voby'
+import { ObservableMaybe, type JSX } from 'woby'
 
 export const isTemp = (s: any): s is TemplateStringsArray => !!s.raw
 

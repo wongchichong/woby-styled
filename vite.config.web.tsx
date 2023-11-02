@@ -7,7 +7,7 @@ const config = defineConfig({
         minify: false,
         lib: {
             entry: ["./src/docs/index.html"],
-            name: "voby-power-tooltip",
+            name: "woby-power-tooltip",
             formats: ['cjs', 'es', 'umd'],
             fileName: (format: string, entryName: string) => `${entryName}.${format}.js`
         },
@@ -23,6 +23,9 @@ const config = defineConfig({
     resolve: {
         alias: {
             '~': path.resolve(__dirname, 'src'),
+            // 'woby/jsx-dev-runtime': process.argv.includes('dev') ? path.resolve('../woby/src/jsx/runtime') : 'woby/jsx-dev-runtime',
+            // 'woby/jsx-runtime': process.argv.includes('dev') ? path.resolve('../woby/src/jsx/runtime') : 'woby/jsx-runtime',
+            // 'woby': process.argv.includes('dev') ? path.resolve('../woby/src') : 'woby'
         },
     },
 })

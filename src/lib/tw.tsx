@@ -1,4 +1,5 @@
-import { $$, ObservableMaybe, useMemo, ObservableReadonly, type JSX } from "voby"
+import { $$, ObservableMaybe, useMemo, ObservableReadonly, type JSX } from 'woby'
+
 import { extract, isTemp } from "./utils"
 
 function style<K extends keyof JSX.IntrinsicElementsMap>(comp?: K) {
@@ -7,7 +8,7 @@ function style<K extends keyof JSX.IntrinsicElementsMap>(comp?: K) {
         if (isTemp(strings)) {
             const C = comp
             const r = useMemo(() => strings.map((str, i) => (i < values.length ? str + $$(values[i]) : str)).join(""))
-            return (C ? props => extract(C, props, r) : r) as any
+            return (C ? props => extract(C as any, props, r) : r) as any
         }
 
         return style(strings).tw as any

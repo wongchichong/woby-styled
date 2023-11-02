@@ -84,7 +84,7 @@ At this point, you should switch back to your master branch and make sure it's
 up to date with React-power-tooltip's master branch:
 
 ```sh
-git remote add upstream git@github.com:voby-power-tooltip/voby-power-tooltip.git
+git remote add upstream git@github.com:voby-power-tooltip/woby-power-tooltip.git
 git checkout master
 git pull upstream master
 ```
@@ -149,11 +149,11 @@ Maintainers need to do the following to push out a release:
   git push voby-power-tooltip N-N-stable:N-N-stable
   ```
 
-[Stack Overflow]: http://stackoverflow.com/questions/tagged/voby-power-tooltip
-[search the issue tracker]: https://github.com/justinrhodes1/voby-power-tooltip/issues?q=something
-[new issue]: https://github.com/justinrhodes1/voby-power-tooltip/issues/new
+[Stack Overflow]: http://stackoverflow.com/questions/tagged/woby-power-tooltip
+[search the issue tracker]: https://github.com/justinrhodes1/woby-power-tooltip/issues?q=something
+[new issue]: https://github.com/justinrhodes1/woby-power-tooltip/issues/new
 [fork React-power-tootlip]: https://help.github.com/articles/fork-a-repo
-[searching all issues]: https://github.com/justinrhodes1/voby-power-tooltip/issues?q=
+[searching all issues]: https://github.com/justinrhodes1/woby-power-tooltip/issues?q=
 [make a pull request]: https://help.github.com/articles/creating-a-pull-request
 [git rebasing]: http://git-scm.com/book/en/Git-Branching-Rebasing
 [interactive rebase]: https://help.github.com/articles/interactive-rebase

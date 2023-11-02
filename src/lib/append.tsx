@@ -1,6 +1,6 @@
-import { Child, $$, useEffect } from "voby"
+import { $$, useEffect, type JSX } from 'woby'
 
-export const append = (child: Child, parent: Child): (() => void) => {
+export const append = (child: JSX.Child, parent: JSX.Child): (() => void) => {
     return useEffect(() => {
         const [c, p] = [$$($$(child)), $$($$(parent))] as [HTMLElement, HTMLElement]
         p.appendChild(c)
