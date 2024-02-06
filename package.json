@@ -1,6 +1,6 @@
 {
     "name": "woby-styled",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Styled/css library designed for Voby.",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
@@ -35,7 +35,7 @@
     "license": "MIT",
     "peerDependencies": {
         "nanoid": "^3.3.7",
-        "woby": "workspace:../woby"
+        "woby": "workspace:../woby@^"
     },
     "devDependencies": {
         "tailwindcss": "^3.4.1",
@@ -43,7 +43,7 @@
         "vite-plugin-dts": "^2.3.0"
     },
     "author": "Chi Chong <wongchichong@gmail.com>",
-    "homepage": "https://github.com/wongchichong/woby-styled",
+    "homepage": "https://github.com/wongchichong/woby-styled@^",
     "repository": {
         "type": "git",
         "url": "git@github.com:wongchichong/woby-styled.git"
