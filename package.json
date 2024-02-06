@@ -34,6 +34,7 @@
     ],
     "license": "MIT",
     "peerDependencies": {
+        "nanoid": "^3.3.7",
         "woby": "workspace:../woby"
     },
     "devDependencies": {
@@ -46,8 +47,5 @@
     "repository": {
         "type": "git",
         "url": "git@github.com:wongchichong/woby-styled.git"
-    },
-    "dependencies": {
-        "nanoid": "^3.3.7"
     }
 }
