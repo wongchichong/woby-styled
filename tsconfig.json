@@ -43,7 +43,6 @@
         "useUnknownInCatchVariables": true,
         "noImplicitAny": false,
         "noUncheckedIndexedAccess": false,
-        "baseUrl": ".",
         "rootDir": "./src",
         "typeRoots": [
             "types"
@@ -53,7 +52,7 @@
     },
     "exclude": [
         "node_modules",
-        "vite.config.ts",
+        "vite.*.*ts",
         "dist*"
     ]
 }
