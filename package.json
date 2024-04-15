@@ -1,6 +1,6 @@
 {
     "name": "woby-styled",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Styled/css library designed for Voby.",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
