@@ -31,4 +31,3 @@ function style<K extends keyof JSX.IntrinsicElementsMap>(comp?: K) {
  * Prepend 'text-red' as className into ND component.
  */
 export const tw = style().tw
-

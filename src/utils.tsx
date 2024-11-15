@@ -6,5 +6,7 @@ export const extract = <K extends keyof JSX.IntrinsicElementsMap>(C: K, props: J
     const { className, ...p } = props
     const cls = p.class
     delete p.class
+
+    //@ts-ignore
     return <C class={[classNames, cls, className]} {...p}></C>
 }

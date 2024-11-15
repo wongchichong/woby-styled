@@ -6,8 +6,8 @@ const config = defineConfig({
     build: {
         minify: false,
         lib: {
-            entry: ["./src/docs/index.html"],
-            name: "woby-power-tooltip",
+            entry: ["./index.html"],
+            name: "woby-styled",
             formats: [/*'cjs', '*/'es'/*, 'umd'*/],
             fileName: (format: string, entryName: string) => `${entryName}.${format}.js`
         },

@@ -25,11 +25,12 @@ ${strings.map((str, i) => (i < values.length ? str + $$(values[i]) : str)).join(
     return { comp, styled }
 }
 
+
 /** convert inline css to class and update <style></style> element
  * 
  * @example
  * const color = ${'red'}
- * <div class={cls`color:${color};`}></div>
+ * <div class={styled`color:${color};`}></div>
  * 
  * Output:  
  * <head>

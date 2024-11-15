@@ -1,3 +1,4 @@
+import React from 'woby'
 import { $$, ObservableMaybe, useEffect } from 'woby'
 import { isTemp } from "./utils"
 import { nanoid } from 'nanoid'
